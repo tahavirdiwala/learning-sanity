@@ -20,8 +20,6 @@ export default function Posts() {
     fetchPosts();
   }, []);
 
-  // Memoize the posts to prevent unnecessary re-renders
-
   return (
     <div className="flex justify-center">
       <div className="w-full max-w-7xl px-4">

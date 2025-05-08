@@ -9,13 +9,13 @@ export default function Navbar() {
         </Link>
         <ul className="flex space-x-6">
           <li>
-            <Link href="/#features">Features</Link>
+            <Link href="/">Features</Link>
           </li>
           <li>
-            <Link href="/#pricing">Pricing</Link>
+            <Link href="/">Pricing</Link>
           </li>
           <li>
-            <Link href="/#contact">Contact</Link>
+            <Link href="/">Contact</Link>
           </li>
         </ul>
       </div>
