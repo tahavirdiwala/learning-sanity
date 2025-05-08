@@ -47,7 +47,7 @@ export default function Posts() {
   // Memoize the posts to prevent unnecessary re-renders
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 p-4">
       {posts.map((post) => (
         <PostCard key={post.slug.current} post={post} />
       ))}

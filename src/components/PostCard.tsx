@@ -12,7 +12,7 @@ function PostCard({ post }: IPostCardProps) {
 
   return (
     <article className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-      {imageUrl && (
+      {imageUrl?.length > 0 && (
         <div className="relative h-48 w-full">
           <Image
             src={imageUrl}
@@ -25,7 +25,7 @@ function PostCard({ post }: IPostCardProps) {
         </div>
       )}
       <div className="p-4">
-        {authorImageUrl && (
+        {authorImageUrl?.length > 0 && (
           <div className="relative w-10 h-10 mb-2">
             <Image
               src={authorImageUrl}
@@ -37,10 +37,10 @@ function PostCard({ post }: IPostCardProps) {
           </div>
         )}
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mb-2">
-          {post.author?.name && (
+          {post.author?.name?.length > 0 && (
             <p className="text-gray-600 font-bold">By {post.author.name}</p>
           )}
-          {post.publishedAt && (
+          {post.publishedAt?.length > 0 && (
             <p className="text-gray-600 text-sm">
               {new Date(post.publishedAt).toLocaleDateString()}
             </p>
