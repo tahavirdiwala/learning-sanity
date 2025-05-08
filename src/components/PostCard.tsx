@@ -37,14 +37,10 @@ function PostCard({ post }: IPostCardProps) {
           </div>
         )}
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mb-2">
-          {post.author?.name?.length > 0 && (
-            <p className="text-gray-600 font-bold">By {post.author.name}</p>
-          )}
-          {post.publishedAt?.length > 0 && (
-            <p className="text-gray-600 text-sm">
-              {new Date(post.publishedAt).toLocaleDateString()}
-            </p>
-          )}
+          <p className="text-gray-600 font-bold">By {post.author.name}</p>
+          <p className="text-gray-600 text-sm">
+            {new Date(post.publishedAt).toLocaleDateString()}
+          </p>
         </div>
         <div className="flex flex-col gap-2">
           <h2 className="text-xl font-semibold">{post.title}</h2>
