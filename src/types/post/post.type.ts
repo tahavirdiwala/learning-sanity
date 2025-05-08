@@ -13,6 +13,12 @@ interface IPost {
   };
   author: {
     name: string;
+    image: {
+      asset: {
+        _id: string;
+        url: string;
+      };
+    };
   };
   publishedAt: string;
   body: PortableTextBlock[];
