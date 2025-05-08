@@ -1,5 +1,5 @@
 import { client } from "@/lib/sanity.client";
-import { ILandingPage } from "@/types/main/main.type";
+import { ILandingPage } from "@/types/landing-page/main.type";
 
 const landingPageQuery = `
   *[_type == "landingPage" && slug.current == $slug][0] {
