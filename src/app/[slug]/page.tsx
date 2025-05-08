@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Posts from "@/components/Posts";
 import { getLandingPageData } from "@/services/landingPage.service";
@@ -47,6 +48,7 @@ export default async function LandingPage({
       <div className="flex flex-col gap-6">
         <Hero hero={{ ...page.hero, title: page.title }} />
         <Posts />
+        <Footer />
       </div>
     );
   } catch (error) {

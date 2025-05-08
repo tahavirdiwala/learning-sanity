@@ -22,6 +22,7 @@ interface IPost {
   };
   publishedAt: string;
   body: PortableTextBlock[];
+  bodyText: string;
 }
 
 export type { IPost };

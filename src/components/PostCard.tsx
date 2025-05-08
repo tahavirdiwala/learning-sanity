@@ -46,7 +46,10 @@ function PostCard({ post }: IPostCardProps) {
             </p>
           )}
         </div>
-        <h2 className="text-xl font-semibold">{post.title}</h2>
+        <div className="flex flex-col gap-2">
+          <h2 className="text-xl font-semibold">{post.title}</h2>
+          <p className="text-gray-600 text-sm">{post.bodyText}</p>
+        </div>
       </div>
     </article>
   );
