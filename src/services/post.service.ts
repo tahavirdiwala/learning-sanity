@@ -12,12 +12,7 @@ const getPostsQuery = `*[_type == "post"] | order(title) {
 }`;
 
 async function getPosts() {
-  try {
-    const posts = client.fetch<IPost[]>(getPostsQuery);
-    return posts;
-  } catch (error) {
-    throw error;
-  }
+  return client.fetch<IPost[]>(getPostsQuery);
 }
 
 export { getPosts };

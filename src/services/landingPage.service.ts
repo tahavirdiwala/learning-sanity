@@ -14,11 +14,7 @@ const landingPageQuery = `
 `;
 
 async function getLandingPageData(slug: string): Promise<ILandingPage | null> {
-  try {
-    return client.fetch<ILandingPage>(landingPageQuery, { slug });
-  } catch (error) {
-    throw error;
-  }
+  return client.fetch<ILandingPage>(landingPageQuery, { slug });
 }
 
 export { getLandingPageData };
